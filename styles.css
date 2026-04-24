@@ -1,0 +1,424 @@
+/* Fonts */
+@font-face {
+  font-family: Sofia;
+  src: url('./fonts/Sofia/Sofia-Regular.ttf');
+}
+@font-face {
+  font-family: Char;
+  src: url('./fonts/Charmonman/Charmonman-Regular.ttf');
+}
+@font-face {
+  font-family: Rye;
+  src: url('./fonts/Rye/Rye-Regular.ttf');
+}
+@font-face {
+  font-family: Miltonian;
+  src: url('./fonts/Miltonian/Miltonian-Regular.ttf');
+}
+@font-face {
+  font-family: Ribeye;
+  src: url('./fonts/Ribeye_Marrow/RibeyeMarrow-Regular.ttf');
+}
+@font-face {
+  font-family: Fascinate;
+  src: url('./fonts/Fascinate_Inline/FascinateInline-Regular.ttf');
+}
+@font-face {
+  font-family: Tapestry;
+  src: url('./fonts/Tapestry/Tapestry-Regular.ttf');
+}
+@font-face {
+  font-family: Kaushan;
+  src: url('./fonts/Kaushan_Script/KaushanScript-Regular.ttf');
+}
+
+
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #111;
+}
+section {
+  padding: 0% 10%;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #111;
+  /* border-bottom: .5px solid lightblue; */
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+nav #logo {
+  font-family: Kaushan;
+  font-size: 150%;
+  padding: 15px;
+  color: lightblue;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  list-style: none;
+}
+nav a {
+  color: lightblue;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+nav li a:hover {
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+}
+nav .active {
+  /* border-top: transparent;
+  border-bottom: transparent; */
+  border-bottom: 1px solid lightblue;
+}
+
+/* Main */
+main {
+  background-color: #111;
+  min-height: 90vh;
+  margin-top: 64px;
+  padding: 5px 0px;
+}
+.hero {
+  width: 100%;
+  min-height: 80vh;
+
+  background-image: url('./images/AquaZoo-aquariums-3.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  width: 100%;
+  background-image: linear-gradient(90deg, transparent, #111, transparent);
+  text-align: center;
+  padding: 80px;
+
+  color: white;
+  font-size: 180%;
+}
+.hero-text h1 {
+  color: white;
+  font-family: Sofia;
+  font-variant: small-caps;
+}
+.hero-text hr {
+  border-color: lightskyblue;
+}
+.hero-text p {
+  color: lightblue;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: Char;
+  font-style: oblique;
+
+  margin: 10px;
+}
+.hero a {
+  background-color: #111;
+  /* border: 3px double aliceblue; */
+  border-top: 1px double aliceblue;
+  border-bottom: 1px double aliceblue;
+  color: aliceblue;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: Ribeye;
+  font-size: 160%;
+  font-variant: small-caps;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 50px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.hero a:hover {
+  border-top: 1px double lightskyblue;
+  border-bottom: 1px double lightskyblue;
+  color: lightskyblue;
+}
+
+/* Section 2 */
+.description {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.description-text {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  /* font-size: 200%; */
+}
+.description-text h2 {
+  color: lightblue;
+  margin: 20px;
+  font-family: Char;
+  font-size: 400%;
+  font-weight: 100;
+}
+.description-text p {
+  color: silver;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 150%;
+  font-weight: 100;
+  margin: 10px 20%;
+}
+.description-text a {
+  display: inline-block;
+  /* width: 50%; */
+  /* background-color: lightskyblue; */
+  background-image: linear-gradient(90deg, transparent, lightskyblue, transparent);
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 50px;
+  font-family: Tapestry;
+  font-size: 200%;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  padding: 10px 10%;
+  margin: 60px;
+}
+.description-text a:hover {
+  color: black;
+  text-shadow: 1px 1px 2px lightblue, 1px 2px 25px blueviolet;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  animation-name: 'bgBtn';
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+@keyframes bgBtn {
+  0% {width: 40%;}
+  50% {width: 45%;}
+  100% {width: 40%;}
+}
+
+/* Footer */
+footer {
+  padding: 25px;
+  background-color: #111;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: grey;
+  text-align: center;
+  border-top: .5px solid grey;
+}
+
+
+
+
+/* --- About page --- */
+
+.page-title {
+  width: 100%;
+  /* background-color: #333; */
+  background-image: linear-gradient(#222, #111);
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+.table-container {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+
+  padding: 5% 0%;
+}
+.table-container h1 {
+  width: 60%;
+  text-align: center;
+  /* margin: 2%; */
+  background-color: #111;
+  color: cadetblue;
+  font-family: Rye;
+  font-size: 150%;
+  font-weight: 100;
+  margin: auto;
+  padding: 15px;
+  border: 2px solid cadetblue;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+}
+table, th, td {
+  border: 1px solid #333;
+  padding: 10px 15px;
+  text-align: center;
+}
+table {
+  width: 60%;
+  background-color: cadetblue;
+  border: 2px solid cadetblue;
+  border-radius: 0px 0px 10px 10px;
+  color: #222;
+  padding: 20px;
+  margin: auto;
+}
+th {
+  font-size: large;
+}
+td {
+  background-color: #222;
+  color: lightsteelblue;
+}
+.closed {
+  color: indianred;
+}
+
+/* Section 2 */
+.key-attractions h2 {
+  width: 60%;
+  text-align: center;
+  background-color: #111;
+  color: lightblue;
+  font-family: Char;
+  font-size: 150%;
+  margin: auto;
+  padding: 15px;
+  /* border: 1px solid lightblue; */
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+}
+.attractions-flexbox {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  /* padding: 5px; */
+  /* border: 1px solid lightblue; */
+}
+.attractions-flexbox > * {
+  /* width: 25%; */
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 5%; */
+  margin: 10px auto;
+}
+.attractions-flexbox img {
+  /* border: 1px solid aliceblue; */
+  border-radius: 20px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: bottom;
+}
+.attractions-flexbox p {
+  color: cadetblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px 15px;
+  border-top: 1px solid cadetblue;
+  border-bottom: 1px solid cadetblue;
+}
+
+
+
+/* --- Shop page --- */
+
+.products {
+  margin: auto;
+  width: 100%;
+}
+.products h2 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3em;
+  font-weight: 100;
+  color: lightblue;
+  margin: 50px auto;
+
+  width: fit-content;
+  background-color: #111;
+  padding: 0px 20px;
+  position: relative;
+  top: 73px;
+}
+.products hr {
+  border-color: lightblue;
+  margin-bottom: 50px;
+}
+.product-grid {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-grid > * {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.product-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.product-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+.product-item p {
+  color: white;
+  text-align: center;
+}
+
+
+
+/* Visit-us page */
+
+#map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#map iframe {
+  width: 100%;
+}
+
+
+
+
+/* @Media Queries */
+@media screen and (max-width: 600px) {
+  section {
+    padding: 0px;
+  }
+  .product-item {
+    width: 50%;
+  }
+  .wrap-when-squished {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
