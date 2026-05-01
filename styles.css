@@ -70,9 +70,13 @@ footer {
 nav {
   /* position: fixed;
   top: 0px; */
+  position: relative;
   width: 100%;
   background-color: #111;
-  padding: 0px 10px;
+  /* background-image: linear-gradient(#111, transparent); */
+  box-shadow: 0px 5px 25px black;
+
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,10 +86,10 @@ nav {
 nav #logo {
   font-family: Kaushan;
   font-size: 150%;
-  padding: 15px 15px;
   color: aliceblue;
-  text-shadow: 2px 2px 2px #68aab7;
+  text-shadow: 1px 1px 0px black, 2px 2px 2px lightgoldenrodyellow;
   text-decoration: none;
+  padding: 0px 15px;
 }
 nav ul {
   box-sizing: border-box;
@@ -125,12 +129,13 @@ nav li a:hover {
   }
   100% {
     background-position: 0px 5px;
-    color: darkseagreen;
-    border-color: aliceblue;
+    color: plum;
+    border-color: plum;
   }
 }
 nav .active {
-  border-bottom: 1px solid #6a8b88;
+  /* border-bottom: 1px solid #6a8b88; */
+  box-shadow: 0px -10px 10px -10px plum, 0px 10px 10px -10px plum;
 }
 
 
@@ -139,14 +144,18 @@ nav .active {
   width: 100%;
   min-height: 80vh;
 
-  background-image: url('./images/AquaZoo-aquariums-3.png');
+  background-image: radial-gradient(transparent, black), url('./images/hero-img/striped-fish-in-aqua-water.jpg');
   background-size: cover;
   background-position: center;
+
+  box-shadow: 0px 10px 15px 10px #000;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* padding: 0%; */
 }
 .hero-text {
   width: 100%;
@@ -156,17 +165,20 @@ nav .active {
 
   color: white;
   font-size: 180%;
+
+  box-shadow: 0px -20px 35px -10px #000;
 }
 .hero-text h1 {
   color: white;
   font-family: Sofia;
   font-variant: small-caps;
+  text-shadow: 2px 2px 1px black, 1px 1px 8px plum;
 }
 .hero-text hr {
   border-color: lightskyblue;
 }
 .hero-text p {
-  color: lightblue;
+  color: plum;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: Char;
   font-style: oblique;
@@ -464,6 +476,7 @@ td {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 25px 0px;
 }
 #map iframe {
   width: 100%;
@@ -555,11 +568,13 @@ td {
 /* @Media Queries */
 @media screen and (max-width: 600px) {
   nav {
-    padding: 0px;
+    padding: 15px 0px;
+
     /* background-color: #021718; */
   }
   nav #logo {
     margin: auto;
+    padding: 15px;
   }
   nav ul {
     box-sizing: border-box;
