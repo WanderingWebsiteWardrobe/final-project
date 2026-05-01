@@ -85,9 +85,9 @@ nav {
 }
 nav #logo {
   font-family: Kaushan;
-  font-size: 150%;
-  color: aliceblue;
-  text-shadow: 1px 1px 0px black, 2px 2px 2px lightgoldenrodyellow;
+  font-size: 160%;
+  color: #ffdab9bc;
+  text-shadow: 1px 1px 0px black, 2px 2px 2px plum;
   text-decoration: none;
   padding: 0px 15px;
 }
@@ -99,15 +99,21 @@ nav ul {
   padding: 12px 0px;
 }
 nav ul a {
-  color: lightblue;
+  color: #ffdab9bc;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: medium;
   text-decoration: none;
   padding: 10px 15px;
 }
+nav li a {
+  border: 1px solid transparent;
+}
 nav li a:hover {
-  border-top: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
+  /* border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue; */
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 10px;
 
 
   position: relative;
@@ -169,16 +175,17 @@ nav .active {
   box-shadow: 0px -20px 35px -10px #000;
 }
 .hero-text h1 {
-  color: white;
+  color: transparent;
   font-family: Sofia;
   font-variant: small-caps;
   text-shadow: 2px 2px 1px black, 1px 1px 8px plum;
 }
 .hero-text hr {
-  border-color: lightskyblue;
+  border-color: transparent;
+  box-shadow: 2px 2px 1px black, 1px 1px 8px 1px plum;
 }
 .hero-text p {
-  color: plum;
+  color: #ffdab9bc;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: Char;
   font-style: oblique;
@@ -297,13 +304,13 @@ nav .active {
   text-align: center;
   /* margin: 2%; */
   background-color: #111;
-  color: cadetblue;
+  color: #ffdab9bc;
   font-family: Rye;
   font-size: 150%;
   font-weight: 100;
   margin: auto;
   padding: 15px;
-  border: 2px solid cadetblue;
+  border: 1px solid #ffdab9bc;
   border-radius: 10px 10px 0px 0px;
   border-bottom: none;
 }
@@ -316,19 +323,21 @@ table, th, td {
 table {
   width: 60%;
   background-color: black;
-  border: 2px solid cadetblue;
+  border: 1px solid #ffdab9bc;
   border-radius: 0px 0px 10px 10px;
-  color: cadetblue;
+  color: #ffdab9bc;
   padding: 0px;
   margin: auto;
 }
 th {
+  color: #ffdab9bc;
   font-size: large;
+  font-weight: 100;
   width: 25%;
 }
 td {
   background-color: black;
-  color: lightsteelblue;
+  color: #ffdab9bc;
   font-size: 120%;
 }
 .closed {
@@ -378,14 +387,14 @@ td {
   object-position: bottom;
 }
 .attractions-flexbox p {
-  color: cadetblue;
+  color: #ffdab9bc;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120%;
   text-align: center;
   margin: 10px 0px;
   padding: 10px 15px;
-  border-top: 1px solid cadetblue;
-  border-bottom: 1px solid cadetblue;
+  border-top: 1px solid #ffdab9bc;
+  border-bottom: 1px solid #ffdab9bc;
 }
 
 
