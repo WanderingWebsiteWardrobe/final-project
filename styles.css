@@ -294,14 +294,14 @@ nav .active {
   margin: auto;
   padding: 20px;
 }
-.table-container {
+.table-section {
   /* display: flex;
   justify-content: center;
   flex-direction: column; */
 
   padding: 5% 0%;
 }
-.table-container h1 {
+.table-section h1 {
   width: 60%;
   text-align: center;
   /* margin: 2%; */
@@ -315,6 +315,9 @@ nav .active {
   border: 1px solid #ffdab9bc;
   border-radius: 10px 10px 0px 0px;
   border-bottom: none;
+}
+.table-container {
+  /* box-shadow: 1px 1px 1px #333, 2px 2px 5px plum; */
 }
 table, th, td {
   border: 1px solid #333;
@@ -449,7 +452,7 @@ td {
   object-fit: contain;
   box-shadow: inset 0px 0px 50px 0px black, -1px 1px 5px plum, inset -1px 1px 10px 0px #ffdab9bc;
   padding: 40px;
-  border-radius: 150px;
+  border-radius: 50%;
 }
 .product-item p {
 
@@ -500,6 +503,7 @@ td {
 #map iframe {
   width: 100%;
 }
+
 #a11y {
   text-align: center;
   margin: 20px;
@@ -510,20 +514,34 @@ td {
 }
 #a11y p {
   color: #ffdab9bc;
+  font-family: Thasadith;
+  font-weight: bold;
+  font-size: large;
   margin: 5px;
 }
 #a11y p span {
   color: greenyellow;
 }
+
+.half-n-half {
+  display: flex;
+  padding: 2% 10%;
+}
+.half-n-half > * {
+  width: 50%;
+  margin: 10px;
+}
 #form {
   color: plum;
   /* text-align: center; */
-
+  padding: 0%;
+  font-family: Thasadith;
+  font-weight: bold;
 }
 #form h2 {
   border-left: 2px solid plum;
-  /* background-color: #222; */
-  width: 50%;
+  background-color: #222;
+  /* width: 50%; */
   padding: 10px 15px;
   margin: 30px 0px;
   font-family: Thasadith;
@@ -531,43 +549,50 @@ td {
 }
 #form form {
   /* padding: 20px; */
-
   /* margin: 0% 10%; */
+  display: flex;
+  flex-direction: column;
 }
 #form label {
   color: plum;
   display: inline-block;
   width: 50px;
   font-size: larger;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-left: 10px;
 }
 #form input {
-  background-color: #ffdab9bc;
-  border: none;
+  background-color: transparent;
+  color: #ffdab9bc;
+  border: 1px solid #ffdab9bc;
   border-radius: 5px;
   padding: 10px;
-  margin: 5px;
-  width: 20%;
+  margin: 5px 0px;
+  width: 100%;
+  font-family: Thasadith;
+  font-weight: bold;
   font-size: medium;
 }
 #form input::placeholder {
-  color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffdab9bc;
+  font-family: Thasadith;
+  font-weight: bold;
 }
 #form textarea {
-  background-color: #ffdab9bc;
-  border: none;
+  background-color: transparent;
+  color: #ffdab9bc;
+  border: 1px solid #ffdab9bc;
   border-radius: 5px;
   padding: 10px;
-  margin: 5px;
-  width: 50%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 5px 0px;
+  width: 100%;
+  font-family: Thasadith;
+  font-weight: bold;
   font-size: large;
 }
 #form textarea::placeholder {
-  color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffdab9bc;
+  font-family: Thasadith;  
+  font-weight: bold;
 }
 #form input[type=submit] {
   cursor: pointer;
@@ -579,17 +604,116 @@ td {
   /* margin-left: 10px; */
   border-radius: 10px;
   width: 50%;
+  margin: auto;
+}
+
+
+#ratings {
+  padding: 0%;
+}
+#ratings h2 {
+  display: flex;
+  justify-content: space-between;
+  border-right: 2px solid plum;
+  background-color: #222;
+  /* width: 50%; */
+  padding: 10px 15px;
+  margin: 30px 0px;
+  font-family: Thasadith;
+  color: plum;
+}
+#rating-stars {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 5px;
+}
+#rating-stars p {
+  font-size: 75%;
+  color: #ffdab9bc;
+  padding: 0px 10px;
+}
+.customer-rating {
+  border: 1px solid #ffdab9bc;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 10px;
+}
+.customer-rating h3 {
+  display: flex;
+  justify-content: space-between;
+  color: plum;
+  font-family: Thasadith;
+  line-height: 2;
+}
+.customer-rating p {
+  color: #ffdab9bc;
+  font-family: Thasadith;
+  font-weight: bold;
+  font-size: large;
+  line-height: 1.5;
 }
 
 
 
 
 /* @Media Queries */
-@media screen and (max-width: 600px) {
+
+/* --- Laptop --- */
+@media screen and (max-width: 1025px) {
+  section {
+    padding: 0% 2%;
+  }
+  .key-attractions {
+    padding: 0% 20%;
+  }
+  .wrap-when-squished {
+    display: flex;
+    justify-content: ;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 0%;
+    gap: 50px;
+  }
+  .wrap-when-squished > * {
+    /* aspect-ratio: 1 / 1; */
+    height: 100%;
+    /* width: 40%; */
+    
+    /* padding: 0%;
+    margin: 0%; */
+  }
+  .half-n-half {
+    padding: 2%;
+  }
+}
+
+/* --- Tablet --- */
+@media screen and (max-width: 769px) {
+  main {
+    padding: 5%;
+  }
+  .wrap-when-squished {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-item {
+    width: 30%;
+  }
+  .half-n-half {
+    flex-direction: column;
+  }
+  .half-n-half > * {
+    width: 100%;
+  }
+}
+
+/* --- Phone --- */
+@media screen and (max-width: 426px) {
   nav {
     padding: 15px 0px;
-
-    /* background-color: #021718; */
   }
   nav #logo {
     margin: auto;
@@ -601,8 +725,6 @@ td {
     /* background-color: #0d2a27; */
     display: flex;
     justify-content: center;
-
-    
   }
   nav ul a {
     font-size: 130%;
@@ -659,7 +781,7 @@ td {
     margin-top: 0px;
   }
   .product-item {
-    width: 50%;
+    width: 100%;
     margin: auto;
   }
   .product-item img {
@@ -675,34 +797,5 @@ td {
   }
   #form textarea {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .wrap-when-squished {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .key-attractions {
-    padding: 0% 20%;
-  }
-  .wrap-when-squished {
-    display: flex;
-    justify-content: ;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 100%;
-    padding: 0%;
-    gap: 10px;
-  }
-  .wrap-when-squished > * {
-    /* aspect-ratio: 1 / 1; */
-    height: 100%;
-    width: 40%;
-    /* padding: 0%;
-    margin: 0%; */
   }
 }

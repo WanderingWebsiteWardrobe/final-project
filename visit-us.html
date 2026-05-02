@@ -28,21 +28,77 @@
       <p><span>&check;</span> Wheelchair accessible entrance</p>
       <p><span>&check;</span> Wheelchair accessible parking lot</p>
     </section>
-    <section id="form">
-      <h2>Questions or Feedback?</h2>
-      <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
-        <div>
-          <label for="name">Name</label><br>
-          <input type="text" id="name" name="name" placeholder="Type your name here...">
+    <div class="half-n-half">
+      <section id="form">
+        <h2>Questions or Feedback?</h2>
+        <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+          <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Type your name here...">
+          </div>
+          <div>
+            <label for="comments">Comments</label><br>
+            <textarea id="comments" name="comments" placeholder="Type your question or feedback here..." rows="10"></textarea>
+          </div>
+          <!-- <button type="submit">Submit</button> -->
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+      <section id="ratings">
+        <h2>
+          Customer Ratings
+          <div id="rating-stars">
+            <p>4.6</p>
+            <img src="./images/rough-star-2.png" alt="" height="20px">
+            <img src="./images/rough-star-2.png" alt="" height="20px">
+            <img src="./images/rough-star-2.png" alt="" height="20px">
+            <img src="./images/rough-star-2.png" alt="" height="20px">
+            <img src="./images/part-rough-star.png" alt="" height="20px">
+          </div>
+        </h2>
+        <div class="customer-rating">
+          <h3>
+            Chris Kammer
+            <div id="rating-stars">
+              <p>5.0</p>
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+            </div>
+          </h3>
+          <p>Easily one of the, if not the, best locally own aquarium stores in all of Houston. Top grade fish, plants, and supplies. All around a great place to be.  I’ve gotten everything I’ve ever needed from this shop for a lush and vibrant tank full of healthy fish.</p>
         </div>
-        <div>
-          <label for="comments">Comments</label><br>
-          <textarea id="comments" name="comments" placeholder="Type your question or feedback here..." rows="10"></textarea>
+        <div class="customer-rating">
+          <h3>
+            Monica
+            <div id="rating-stars">
+              <p>4.0</p>
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+            </div>
+          </h3>
+          <p>Wow! Check this place out! They have literally everything!</p>
         </div>
-        <!-- <button type="submit">Submit</button> -->
-        <input type="submit" value="Submit">
-      </form>
-    </section>
+        <div class="customer-rating">
+          <h3>
+            Jeffery Coffey
+            <div id="rating-stars">
+              <p>5.0</p>
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+              <img src="./images/rough-star-2.png" alt="" height="20px">
+            </div>
+          </h3>
+          <p>My favorite place to get anything related to fish! The people that own the store and work at the store are awesome and really care about fish and their customers. It is usually very busy in the store but it’s worth the wait.</p>
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
     <p>&copy;2026 WanderingWebsiteWardrobe</p>
