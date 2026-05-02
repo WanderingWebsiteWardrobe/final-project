@@ -60,9 +60,9 @@ footer {
   background-color: #111;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 100;
-  color: grey;
+  color: #ffdab97e;
   text-align: center;
-  border-top: .5px solid grey;
+  border-top: .5px solid #ffdab9bc;
 }
 
 
@@ -175,7 +175,7 @@ nav .active {
   box-shadow: 0px -20px 35px -10px #000;
 }
 .hero-text h1 {
-  color: transparent;
+  color: #ffdab9bc;
   font-family: Sofia;
   font-variant: small-caps;
   text-shadow: 2px 2px 1px black, 1px 1px 8px plum;
@@ -185,7 +185,7 @@ nav .active {
   box-shadow: 2px 2px 1px black, 1px 1px 8px 1px plum;
 }
 .hero-text p {
-  color: #ffdab9bc;
+  color: plum;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: Char;
   font-style: oblique;
@@ -228,7 +228,7 @@ nav .active {
   /* font-size: 200%; */
 }
 .description-text h2 {
-  color: lightblue;
+  color: plum;
   margin: 20px;
   /* font-family: Char; */
   font-family: Thasadith;
@@ -237,7 +237,7 @@ nav .active {
   font-weight: 100;
 }
 .description-text p {
-  color: silver;
+  color: #ffdab9bc;
   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
   font-family: Thasadith;
   font-size: 150%;
@@ -249,32 +249,34 @@ nav .active {
   /* width: 50%; */
   /* background-color: lightskyblue; */
   /* background-image: linear-gradient(90deg, transparent, lightskyblue, transparent); */
-  border-top: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
+  border-top: 1px solid plum;
+  border-bottom: 1px solid plum;
   border-radius: 50px;
   /* font-family: Tapestry; */
   font-family: Thasadith;
   font-size: 200%;
   /* font-weight: bold; */
-  color: aliceblue;
-  text-shadow: 1px 1px 5px cyan;
+  color: #ffdab9bc;
+  text-shadow: 1px 1px 5px plum;
   text-decoration: none;
   padding: 10px 40px;
   margin: 30px;
 }
 .description-text a:hover {
-  color: black;
+  color: plum;
   text-shadow: 1px 1px 2px lightblue, 1px 2px 25px blueviolet;
-  border-top: 1px solid lightblue;
-  border-bottom: 1px solid lightblue;
+  border-top: 1px solid #ffdab9bc;
+  border-bottom: 1px solid #ffdab9bc;
+  box-shadow: 0px 0px 10px 0px plum;
   animation-name: 'bgBtn';
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
+  animation-direction: alternate;
 }
 @keyframes bgBtn {
   0% {width: 26%;}
-  50% {width: 32%;}
+  50% {width: 28%;}
   100% {width: 26%;}
 }
 
@@ -409,7 +411,8 @@ td {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 3em;
   font-weight: 100;
-  color: #68aab7;
+  color: #ffdab9bc;
+  text-shadow: 1px 1px 10px plum;
   margin: 50px auto;
 
   width: fit-content;
@@ -419,7 +422,8 @@ td {
   top: 73px;
 }
 .products hr {
-  border-color: #68aab7;
+  border-color: plum;
+  box-shadow: 1px 1px 10px 2px #ffdab9bc;
   margin-bottom: 50px;
 }
 .product-grid {
@@ -443,17 +447,22 @@ td {
 .product-grid img {
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  box-shadow: inset 0px 0px 50px 0px black, -1px 1px 5px plum, inset -1px 1px 10px 0px #ffdab9bc;
+  padding: 40px;
+  border-radius: 150px;
 }
 .product-item p {
 
 }
 .product-item .label {
-  color: #9cc2ca;
+  color: plum;
+  /* background-image: linear-gradient(#ffdab9bc 5%, transparent 95%, #ffdab9bc); */
   text-align: center;
 
   /* background-color: darkslategrey; */
-  border-top: 1px solid darkslategrey;
-  border-bottom: 1px solid darkslategrey;
+  border-top: .5px solid plum;
+  border-bottom: .5px solid plum;
+  box-shadow: 0px 0px 25px -5px #ffdab9bc, -2px 2px 10px 5px black;
   border-radius: 5px;
   padding: 10px 15px;
   margin: 20px;
@@ -464,8 +473,9 @@ td {
 }
 .product-item .price {
   /* background-color: #0e2b31; */
-  border: 1px solid darkslategrey;
-  color: #68aab7;
+  /* border: 1px solid #ffdab9bc; */
+  box-shadow: inset 0px 1px 2px #ffdab9bc, 0px 1px 1px plum, -2px 2px 10px 5px black;
+  color: #ffdab9bc;
   text-align: center;
   margin: auto;
   width: fit-content;
@@ -475,7 +485,7 @@ td {
 #empty-category {
   text-align: center;
   font-size: larger;
-  color: #68aab7;
+  color: plum;
 }
 
 
@@ -495,29 +505,29 @@ td {
   margin: 20px;
 }
 #a11y h2 {
-  color: lightblue;
+  color: plum;
   font-family: Thasadith;
 }
 #a11y p {
-  color: aliceblue;
+  color: #ffdab9bc;
   margin: 5px;
 }
 #a11y p span {
   color: greenyellow;
 }
 #form {
-  color: lightblue;
+  color: plum;
   /* text-align: center; */
 
 }
 #form h2 {
-  border-left: 2px solid lightblue;
+  border-left: 2px solid plum;
   /* background-color: #222; */
   width: 50%;
   padding: 10px 15px;
   margin: 30px 0px;
   font-family: Thasadith;
-  color: lightblue;
+  color: plum;
 }
 #form form {
   /* padding: 20px; */
@@ -525,7 +535,7 @@ td {
   /* margin: 0% 10%; */
 }
 #form label {
-  color: darkseagreen;
+  color: plum;
   display: inline-block;
   width: 50px;
   font-size: larger;
@@ -533,7 +543,7 @@ td {
   margin-left: 10px;
 }
 #form input {
-  background-color: #6a8b88;
+  background-color: #ffdab9bc;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -546,7 +556,7 @@ td {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #form textarea {
-  background-color: #6a8b88;
+  background-color: #ffdab9bc;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -561,10 +571,10 @@ td {
 }
 #form input[type=submit] {
   cursor: pointer;
-  background-color: #111;
-  border: 1px solid #6a8b88;
+  background-color: transparent;
+  border: 1px solid plum;
   font-size: large;
-  color: darkseagreen;
+  color: plum;
   padding: 10px 20px;
   /* margin-left: 10px; */
   border-radius: 10px;
@@ -665,5 +675,34 @@ td {
   }
   #form textarea {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrap-when-squished {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .key-attractions {
+    padding: 0% 20%;
+  }
+  .wrap-when-squished {
+    display: flex;
+    justify-content: ;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 0%;
+    gap: 10px;
+  }
+  .wrap-when-squished > * {
+    /* aspect-ratio: 1 / 1; */
+    height: 100%;
+    width: 40%;
+    /* padding: 0%;
+    margin: 0%; */
   }
 }
