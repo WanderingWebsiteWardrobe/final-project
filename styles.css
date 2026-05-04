@@ -286,6 +286,31 @@ nav .active {
 
 /* --- About page --- */
 
+#history {
+  width: 60%;
+  margin: 80px auto;
+  padding: 30px;
+  color: #ffdab9bc;
+  font-family: Thasadith;
+  font-weight: bold;
+  font-size: larger;
+  border: 1px solid #ffdab9bc;
+  border-radius: 20px;
+}
+#history h2 {
+  text-align: center;
+  color: plum;
+  margin: 10px;
+  text-shadow: 0px 0px 10px #ffdab9bc;
+}
+#history p {
+  /* text-indent: 30px; */
+  margin: 10px;
+  border-left: 1px solid #ffdab9bc;
+  border-right: 1px solid #ffdab9bc;
+  padding: 0px 15px;
+}
+
 .page-title {
   width: 100%;
   /* background-color: #333; */
@@ -302,17 +327,17 @@ nav .active {
   justify-content: center;
   flex-direction: column; */
 
-  padding: 5% 0%;
+  padding: 0%;
 }
 .table-section h2 {
   width: 60%;
   text-align: center;
   /* margin: 2%; */
   background-color: #111;
-  color: #ffdab9bc;
-  font-family: Rye;
-  font-size: 150%;
-  font-weight: 100;
+  color: plum;
+  text-shadow: 0px 0px 10px #ffdab9bc;
+  font-family: Thasadith;
+  font-weight: bold;
   margin: auto;
   padding: 15px;
   border: 1px solid #ffdab9bc;
@@ -366,11 +391,17 @@ td {
   border-radius: 10px 10px 0px 0px;
   border-bottom: none;
 }
+.key-attractions {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  width: 100%;
+}
 .attractions-flexbox {
   display: flex;
   justify-content: space-between;
   width: 60%;
-  margin: auto;
+  margin: 80px 0px;
   /* padding: 5px; */
   /* border: 1px solid lightblue; */
 }
@@ -396,6 +427,7 @@ td {
 }
 .attractions-flexbox p {
   color: #ffdab9bc;
+  text-shadow: 0px 0px 5px plum;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120%;
   text-align: center;
@@ -403,6 +435,7 @@ td {
   padding: 10px 15px;
   border-top: 1px solid #ffdab9bc;
   border-bottom: 1px solid #ffdab9bc;
+  box-shadow: 0px 0px 10px -5px plum;
 }
 
 
@@ -694,10 +727,10 @@ td {
   }
   .key-attractions {
     padding: 0% 20%;
+    margin: 5% 0%;
   }
   .wrap-when-squished {
     display: flex;
-    justify-content: ;
     flex-wrap: wrap;
     margin: auto;
     width: 100%;
@@ -721,6 +754,9 @@ td {
 @media screen and (max-width: 769px) {
   main {
     padding: 5%;
+  }
+  .key-attractions {
+    margin: 20% 0%;
   }
   .wrap-when-squished {
     display: flex;
@@ -792,11 +828,29 @@ td {
     margin: 30px 0px;
   }
 
+  #history {
+    width: 100%;
+    padding: 30px 0%;
+    margin: 30px 0px;
+  }
+  #history h2 {
+    margin: 20px;
+  }
+  #history p {
+    text-align: justify;
+    text-justify: distribute;
+  }
   .table-container h1 {
     width: 90%;
   }
+  .table-section h2 {
+    width: 100%;
+    margin: 0%;
+    padding: 5%;
+  }
   table {
-    width: 90%;
+    width: 100%;
+    margin: 0%;
   }
   table, th, td {
     font-weight: 100;
