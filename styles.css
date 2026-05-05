@@ -425,6 +425,12 @@ td {
   object-fit: cover;
   object-position: bottom;
 }
+.attractions-flexbox #img-1, #img-2 {
+  filter: invert(100%) hue-rotate(210deg) saturate(150%) drop-shadow(2px 2px 2px plum);
+}
+.attractions-flexbox #img-3, #img-4 {
+  filter: invert(100%) drop-shadow(2px 2px 2px #ffdab9bc);
+}
 .attractions-flexbox p {
   color: #ffdab9bc;
   text-shadow: 0px 0px 5px plum;
