@@ -778,14 +778,17 @@ td {
   font-size: large;
   line-height: 1.5;
 }
+.rating-stars-main {
+  font-size: 80%;
+}
 .rating-stars {
   display: flex;
   flex-direction: row;
   width: fit-content;
   padding: 5px;
 }
-.rating-stars p {
-  font-size: 80%;
+.rating-stars span {
+  font-size: 90%;
   font-weight: bold;
   color: #ffdab9bc;
   padding: 0px 10px;
