@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visit Us - AquaZoo</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/x-icon" href="./images/starfish1.png">
 </head>
 <body>
   <header>
@@ -21,7 +22,8 @@
   <main>
     <h1 class="main-heading-text">Come Visit Us!</h1>
     <section id="map">
-      <!-- <iframe src="https://www.google.com/maps/place/AquaZoo/@29.5577568,-95.1514024,15.93z/data=!4m6!3m5!1s0x145e82f4250a3dd7:0x58716befda4b796d!8m2!3d29.5584868!4d-95.1467811!16s%2Fg%2F1q6kk86mr?entry=ttu&g_ep=EgoyMDI2MDQyMS4wIKXMDSoASAFQAw%3D%3D"></iframe> -->
+      <h2>Location</h2>
+      <hr>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7271.55761975725!2d-95.15140235903151!3d29.557756807297043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145e82f4250a3dd7%3A0x58716befda4b796d!2sAquaZoo!5e0!3m2!1sen!2sus!4v1776979312566!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section id="a11y">
@@ -39,70 +41,69 @@
           </div>
           <div>
             <label>Email</label>
-            <input type="email" id="email" name="email" placeholder="Example@email.com">
+            <input type="email" id="email" name="email" placeholder="Example@email.com" required>
           </div>
           <div>
             <label for="comments">Comments</label><br>
             <textarea id="comments" name="comments" placeholder="Ask your questions or give feedback here..." rows="10" required></textarea>
           </div>
-          <!-- <button type="submit">Submit</button> -->
           <input type="submit" value="Submit">
         </form>
       </section>
       <section id="ratings">
         <h2>
-          Customer Ratings
-          <div id="rating-stars">
+          Customer Reviews
+          <span class="rating-stars">
             <p>4.6</p>
             <img src="./images/rough-star-2.png" alt="" height="20">
             <img src="./images/rough-star-2.png" alt="" height="20">
             <img src="./images/rough-star-2.png" alt="" height="20">
             <img src="./images/rough-star-2.png" alt="" height="20">
             <img src="./images/part-rough-star.png" alt="" height="20">
-          </div>
+          </span>
         </h2>
         <div class="customer-rating">
           <h3>
             Chris Kammer
-            <div id="rating-stars">
+            <span class="rating-stars">
               <p>5.0</p>
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
-            </div>
+            </span>
           </h3>
           <p>Easily one of the, if not the, best locally own aquarium stores in all of Houston. Top grade fish, plants, and supplies. All around a great place to be.  I’ve gotten everything I’ve ever needed from this shop for a lush and vibrant tank full of healthy fish.</p>
         </div>
         <div class="customer-rating">
           <h3>
             Monica
-            <div id="rating-stars">
+            <span class="rating-stars">
               <p>4.0</p>
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
-            </div>
+            </span>
           </h3>
           <p>Wow! Check this place out! They have literally everything!</p>
         </div>
         <div class="customer-rating">
           <h3>
             Jeffery Coffey
-            <div id="rating-stars">
+            <span class="rating-stars">
               <p>5.0</p>
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
               <img src="./images/rough-star-2.png" alt="" height="20">
-            </div>
+            </span>
           </h3>
           <p>My favorite place to get anything related to fish! The people that own the store and work at the store are awesome and really care about fish and their customers. It is usually very busy in the store but it’s worth the wait.</p>
         </div>
-        <p id="rating-note">From 431 Google Reviews</p>
+        <p id="rating-note">From 430+ Google Ratings</p>
       </section>
     </div>
   </main>
